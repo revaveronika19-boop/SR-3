@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>Замовлення</h1>{% for o in orders %}<p>№{{o.id}} — {{o.title}} — {{o.customer}} ({{o.quantity}} шт.)</p>{% else %}<p>Поки що немає замовлень.</p>{% endfor %}{% endblock %}
